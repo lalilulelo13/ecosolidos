@@ -1,0 +1,1046 @@
+@charset "UTF-8";
+/* REINICIO DE CSS */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+.logoecosolidos a {
+    background-image: url(../../../../Web/imgs/ECO_Landing-Page.png);
+    background-repeat: no-repeat;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600);	
+
+html {
+  border-top: 5px solid #fff;
+  background: #58DDAF;
+  color: #2a2a2a;
+}
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Quicksand', sans-serif;
+}
+
+body{
+	height: 100vh;
+	width: 100%;
+}
+
+.container{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px 100px;
+}
+
+.container:after{
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background: url("img/bg.jpg") no-repeat center;
+	background-size: cover;
+	filter: blur(50px);
+	z-index: -1;
+}
+.contact-box{
+	max-width: 850px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-color: #fff;
+	box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.19);
+}
+
+.left{
+	background: url("img/bg.jpg") no-repeat center;
+	background-size: cover;
+	height: 100%;
+}
+
+.right{
+	padding: 25px 40px;
+}
+
+h2{
+	position: relative;
+	padding: 0 0 10px;
+	margin-bottom: 10px;
+}
+
+h2:after{
+	content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 50px;
+    border-radius: 2px;
+    background-color: #2ecc71;
+}
+
+.field{
+	width: 100%;
+	border: 2px solid rgba(0, 0, 0, 0);
+	outline: none;
+	background-color: rgba(230, 230, 230, 0.6);
+	padding: 0.5rem 1rem;
+	font-size: 1.1rem;
+	margin-bottom: 22px;
+	transition: .3s;
+}
+
+.field:hover{
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+textarea{
+	min-height: 150px;
+}
+
+.btn{
+	width: 100%;
+	padding: 0.5rem 1rem;
+	background-color: #2ecc71;
+	color: #fff;
+	font-size: 1.1rem;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	transition: .3s;
+}
+
+.btn:hover{
+    background-color: #27ae60;
+}
+
+.field:focus{
+    border: 2px solid rgba(30,85,250,0.47);
+    background-color: #fff;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans';
+}
+
+h1 {
+  color: #fff;
+  text-align: center;
+  font-weight: 300;
+}
+
+#slider {
+  position: relative;
+  overflow: hidden;
+  margin: 20px auto 0 auto;
+  border-radius: 4px;
+}
+
+#slider ul {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: 200px;
+  list-style: none;
+}
+
+#slider ul li {
+  position: relative;
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 500px;
+  height: 300px;
+  background: #ccc;
+  text-align: center;
+  line-height: 300px;
+}
+
+a.control_prev, a.control_next {
+  position: absolute ;
+  top: 40%;
+  z-index: 999;
+  display: block;
+  padding: 4% 3%;
+  width: auto;
+  height: auto;
+  background: #2a2a2a;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+a.control_prev:hover, a.control_next:hover {
+  opacity: 1;
+  -webkit-transition: all 0.2s ease;
+}
+
+a.control_prev {
+  border-radius: 0 2px 2px 0;
+}
+
+a.control_next {
+  right: 0;
+  border-radius: 2px 0 0 2px;
+}
+
+.slider_option {
+  position: relative;
+  margin: 10px auto;
+  width: 160px;
+  font-size: 18px;
+}
+.imagenservicios {
+    width: 49%;
+    background-image: url(../img/imagenservicios.png);
+    background-position: right center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 98vh;
+    position: absolute;
+    margin-top: 3px;
+}
+.textoservicios1 {
+    width: 50%;
+    float: right;
+    z-index: 1;
+    height: 100%;
+}
+.textoservicios2 {
+    width: 50%;
+    float: right;
+    position: absolute;
+    z-index: 1;
+    height: 100%;
+}
+
+
+
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+    line-height: 1;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    display: block;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/*MODELO DE CAJA*/
+* {
+  box-sizing: border-box;
+}
+/*INICIAN LOS ESTILOS GENERALES*/
+body {
+  padding: 0px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #FFFFFF;
+  background-color: #202020;
+}
+header {
+    width: 100%;
+    padding-top: 32px;
+    padding-right: 32px;
+    padding-bottom: 32px;
+    padding-left: 32px;
+    position: fixed;
+    z-index: 1;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: open-sans;
+    text-align: center;
+    font-style: normal;
+    font-weight: 300;
+}
+h2 {
+    height: 78px;
+    font-family: open-sans;
+    font-style: normal;
+    font-weight: 800;
+}
+h8 {
+    font-family: open-sans;
+    font-style: normal;
+    font-weight: 400;
+}
+
+
+h1 {
+    font-weight: 800;
+    font-size: 62px;
+    line-height: 75px;
+    color: #05C490;
+    text-transform: none;
+    text-align: center;
+    font-family: open-sans;
+    font-style: normal;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+h1 {
+    font-weight: 800;
+    font-size: 74px;
+    line-height: 83px;
+    color: #FFFFFF;
+    text-transform: none;
+    text-align: center;
+    font-family: open-sans;
+    font-style: normal;
+}
+footer {
+    width: 100%;
+    height: 100vh;
+}
+footer h1 {
+    font-size: 24px;
+}
+footer ul {
+    margin-top: 32px;
+}
+footer li {
+    height: 40px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+footer li a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+footer li a:hover {
+    color: #A9A9A9;
+}
+#btn-menu {
+    display: none;
+}
+header label {
+    cursor: pointer;
+}
+#btn-menu:checked ~ .menu {
+
+}
+.menu li a:hover {
+    color: #213A88;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+.menu li a {
+    border-top: 1px solid rgba(255,255,255,0.50);
+    height: 62px;
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    display: none;
+    color: rgba(255,255,255,1.00);
+    text-decoration: none;
+    width: 14%;
+    float: left;
+    margin-left: 0px;
+    margin-right: auto;
+    position: relative;
+}
+.menu ul {
+    display: none;
+    flex-direction: column;
+    margin-left: 0px;
+}
+.menu {
+    width: 70%;
+    position: relative;
+    background-color: rgba(0,0,0,0.50);
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: all 0.5s;
+    margin-top: -157px;
+    z-index: 4;
+    float: right;
+    font-family: open-sans;
+    font-style: normal;
+    font-size: small;
+    margin-left: 0%;
+    margin-right: auto;
+}
+.contenedor {
+    position: relative;
+}
+.fullwidth {
+    width: auto;
+    height: 203px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    margin-top: -32%;
+    padding-top: 7px;
+    font-weight: 800;
+    font-family: open-sans;
+    font-style: normal;
+}
+.fullwidthtext2 {
+    width: auto;
+    height: 136px;
+    margin-left: auto;
+    padding-left: auto;
+    padding-right: auto;
+    padding-top: 46px;
+    font-family: open-sans;
+    font-style: normal;
+    font-weight: 300;
+    font-size: large;
+    margin-right: auto;
+    position: relative;
+    margin-top: auto;
+}
+.textoazuljustificado {
+    width: 26%;
+    height: 136px;
+    margin-left: 67%;
+    padding-left: auto;
+    padding-right: auto;
+    font-family: open-sans;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    margin-right: 9%;
+    position: absolute;
+    margin-top: 16%;
+    color: #203A87;
+    text-align: justify;
+    line-height: 115%;
+}
+
+.logo {
+    background-image: url(../imgs/logo.png);
+    width: 150px;
+    height: 40px;
+    position: absolute;
+    background-repeat: no-repeat;
+    z-index: 2;
+    background-size: 150px auto;
+    right: 32px;
+	cursor: pointer;
+}
+
+/*CONTENIDOS GENERAL*/
+
+.slider {
+    background-image: url(../img/home-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center 0px;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    margin-top: -6px;
+}
+.balazo {
+    width: 100%;
+    position: absolute;
+    left: 32px;
+    right: 32px;
+    bottom: 72px;
+    padding-right: 32px;
+    text-align: center;
+}
+.balazo p {
+    font-size: 13px;
+    line-height: 27px;
+    color: #fff;
+    margin-bottom: 20px;
+    margin-top: 16px;
+    text-align: center;
+    font-weight: 400;
+}
+.boton a     {
+    border-radius: 4px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+    width: 140px;
+    height: 56px;
+    font-size: 16px;
+    background-color: #30BCC9;
+    text-decoration: none;
+    padding: 12px;
+    color: #FFFFFF;
+}
+.boton a:hover {
+    background-color: #F6404F;
+}
+.btn-sig a  {
+    background-color: rgba(0,0,0,0.00);
+    padding: 12px;
+    border: 2px solid rgba(255,255,255,1.00);
+    border-radius: 4px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+    height: 40px;
+    font-size: 12px;
+    color: #FFFFFF;
+    text-decoration: none;
+    float: left;
+    margin-left: 16px;
+}
+.btn-sig a:hover {
+    background-color: rgba(0,0,0,0.50);
+}
+.btn-ant a  {
+    background-color: rgba(0,0,0,0.00);
+    padding: 12px;
+    border: 2px solid rgba(255,255,255,1.00);
+    border-radius: 4px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    height: 40px;
+    font-size: 12px;
+    color: #FFFFFF;
+    text-decoration: none;
+    float: left;
+}
+.btn-ant a:hover {
+    background-color: rgba(0,0,0,0.50);
+}
+/*CONTENIDOS GENERAL*/
+.historia {
+    background-image: url(../img/Nuestra-historia.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 100% auto;
+    width: 100%;
+    height: 1014px;
+    position: relative;
+    background-color: #FFFFFF;
+}
+/*CONTENIDOS GENERAL*/
+.menta {
+    background-image: url(../img/Nuestros%20servicios-20.svg);
+    background-repeat: no-repeat;
+    background-position: center 0px;
+    background-size: 100% auto;
+    width: 100%;
+    height: 175vh;
+    position: relative;
+    background-color: #FFFFFF;
+}
+.residuosdomiciliaresimagenes {
+    width: 50%;
+    height: 100%;
+    float: right;
+    position: relative;
+    left: -32%;
+}
+
+.tituloscortos {
+}
+.parrafoslargos {
+    width: 25%;
+    position: absolute;
+    margin-left: 70%;
+    margin-top: 874px;
+}
+
+
+/*CONTENIDOS GENERAL*/
+.fresa {
+    background-repeat: no-repeat;
+    background-position: center 0px;
+    background-size: cover;
+    width: 100%;
+    height: 112vh;
+    position: relative;
+    background-color: #FFFFFF;
+}
+/*CONTENIDOS GENERAL*/
+.chocolate {
+    background-repeat: no-repeat;
+    background-position: center 0px;
+    background-size: cover;
+    width: 100%;
+    height: 992px;
+    position: relative;
+    background-image: -webkit-linear-gradient(270deg,rgba(255,255,255,1.00) 0%,rgba(255,255,255,1.00) 100%);
+    background-image: -moz-linear-gradient(270deg,rgba(255,255,255,1.00) 0%,rgba(255,255,255,1.00) 100%);
+    background-image: -o-linear-gradient(270deg,rgba(255,255,255,1.00) 0%,rgba(255,255,255,1.00) 100%);
+    background-image: linear-gradient(180deg,rgba(255,255,255,1.00) 0%,rgba(255,255,255,1.00) 100%);
+    background-color: #FFFFFF;
+    margin-bottom: -17px;
+}
+/*CONTENIDOS GENERAL*/
+.chocolate3 {
+    background-repeat: no-repeat;
+    background-position: 24% 25%;
+    background-size: contain;
+    width: 100%;
+    height: 992px;
+    position: relative;
+    background-color: #FFFFFF;
+    margin-bottom: -17px;
+    background-image: url(../img/merocertificado-14.svg);
+}
+/*CONTENIDOS GENERAL*/
+.chocolate4 {
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: contain;
+    width: 100%;
+    height: 839px;
+    position: relative;
+    background-color: #FFFFFF;
+    margin-bottom: -17px;
+    background-image: url(../img/final-21.svg);
+}
+/*CONTENIDOS GENERAL*/
+.chocolate2 {
+    background-repeat: no-repeat;
+    background-position: center 0px;
+    background-size: cover;
+    width: 100%;
+    height: 110vh;
+    position: relative;
+    background-color: #FFFFFF;
+    margin-bottom: -17px;
+    margin-top: 65px;
+    background-image: url(../img/Proyectos-18.svg);
+}
+.residuos1 {
+    width: 50%;
+    float: right;
+    height: 100%;
+}
+.residuos2 {
+    width: 50%;
+    float: right;
+    height: 100%;
+    padding-left: 33px;
+}
+.residuoshero {
+    background-image: url(../img/ornamentos-residuos.png);
+    background-repeat: no-repeat;
+    background-position: left 0%;
+    background-size: contain;
+    margin-left: 11%;
+    width: auto;
+    height: 60%;
+    margin-top: 51px;
+    margin-right: 109px;
+}
+
+.residuostitulo {
+    font-family: open-sans;
+    font-style: normal;
+    font-weight: 800;
+    color: #213A89;
+    font-size: x-large;
+    margin-left: 9%;
+    margin-right: 227px;
+}
+.residuosboton {
+    background-image: url(../img/conozcala.png);
+    background-repeat: no-repeat;
+    background-position: left 0%;
+    background-size: contain;
+    height: 4%;
+    margin-top: 22px;
+    margin-left: 9%;
+}
+
+.residuoscuerpo {
+    font-family: open-sans;
+    font-style: normal;
+    font-weight: 400;
+    color: #213A89;
+    text-align: justify;
+    font-size: small;
+    margin-top: 17px;
+    margin-left: 9%;
+    line-height: 16px;
+    margin-right: 81px;
+}
+
+
+
+/*CONTENIDOS GENERAL*/
+.durazno {
+    background-repeat: no-repeat;
+    background-position: center 0px;
+    background-size: cover;
+    width: 100%;
+    height: 50vh;
+    position: relative;
+    background-color: #213A89;
+}
+.col-01 {
+    width: 100%;
+    margin-top: 30%;
+}
+.col-01 h1 {
+    display: none;
+}
+.col-02 {
+    margin-left: 0px;
+    margin-right: 32px;
+    width: 100%;
+}
+.col-02 h1 {
+    display: none;
+}
+.redes {
+    width: 50px;
+    height: 50px;
+    margin-top: 32px;
+    display: inline-block;
+    margin-right: 32px;
+}
+.menubehind {
+    background-color: #0082D0;
+    width: 50%;
+    margin-top: -55px;
+    margin-right: auto;
+    margin-bottom: 0%;
+    margin-left: auto;
+    position: relative;
+    height: 98px;
+    border-bottom-right-radius: 34px;
+    border-bottom-left-radius: 35px;
+}
+.logocompleto {
+    background-image: url(../img/ECO-LOGO-COMPLETO.png);
+    width: 100%;
+    position: relative;
+    height: 103px;
+    background-repeat: no-repeat;
+    margin-left: auto;
+    margin-right: auto;
+    background-position: center center;
+    background-size: contain;
+    margin-top: -29px;
+}
+.nuestrosservicios1 {
+    margin-left: 10%;
+    width: 75%;
+    position: relative;
+    margin-top: 10%;
+    background-image: url(../img/nuestrosserviciostitulo.png);
+    background-repeat: no-repeat;
+    background-position: left 0%;
+    background-size: contain;
+    height: 20%;
+}
+.textonuestrosservicios   {
+    font-family: open-sans;
+    font-style: normal;
+    font-weight: 300;
+    color: #213A89;
+    width: 75%;
+}
+.residuosiconos {
+    height: 110px;
+    background-image: url(../img/domiciliares.png);
+    background-repeat: no-repeat;
+    background-position: left 0%;
+    background-size: contain;
+}
+.certificadotextos {
+    background-image: url(../img/certificado-16.svg);
+    background-repeat: no-repeat;
+    height: 370px;
+    margin-bottom: 16px;
+    margin-left: 11%;
+    margin-top: 30%;
+    padding-bottom: 0px;
+}
+.formulario {
+    background-repeat: no-repeat;
+    height: 370px;
+    margin-bottom: 16px;
+    margin-left: 11%;
+    margin-top: 13%;
+    padding-bottom: 0px;
+    width: 446px;
+}
+.certificadoboton {
+    background-image: url(../img/certificado-17.svg);
+    background-repeat: no-repeat;
+    height: 44px;
+    margin-left: 11%;
+    margin-top: 31px;
+}
+.certificado {
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: auto;
+    height: 90%;
+    margin-right: 171px;
+    margin-top: 57px;
+    background-size: 91% auto;
+    padding-bottom: 0px;
+}
+form label {
+}
+.formulariotexto {
+    color: #213A89;
+    font-family: open-sans;
+    font-style: normal;
+    font-weight: 300;
+    margin-top: 21px;
+    font-size: small;
+    padding-left: 8px;
+    line-height: 15px;
+}
+.formulariotitulo {
+    font-family: open-sans;
+    font-style: normal;
+    font-weight: 800;
+    color: #213A89;
+    font-size: 47px;
+    margin-bottom: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 768px){
+.residuosiconos3 {
+    height: 140px;
+    background-image: url(../img/peligrosos.png);
+    background-repeat: no-repeat;
+    background-position: left 0%;
+    background-size: contain;
+}
+.residuosiconos2 {
+    height: 140px;
+    background-image: url(../img/industriales.png);
+    background-repeat: no-repeat;
+    background-position: left 0%;
+    background-size: contain;
+}
+footer {
+    height: 100%;
+}
+.col-01 {
+    width: 30%;
+    float: left;
+    margin-top: 0px;
+}
+.col-01 h1 {
+    display: block;
+}
+.col-02 {
+    width: 25%;
+    float: left;
+    margin-left: 32px;
+}
+.col-02 h1 {
+    display: block;
+}
+.redes {
+	margin-left: 0px;
+	margin-right: 32px;
+}
+}
+
+@media (min-width: 1024px){
+.logo {
+    left: 32px;
+}
+header label {
+    display: none;
+}
+.menu {
+    position: absolute;
+    background-color: rgba(0,0,0,0.00);
+    width: 90%;
+    margin-top: 0px;
+    margin-left: -71px;
+}
+.menu li a {
+    display: block;
+    padding-top: 15px;
+    padding-right: 20px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    text-decoration: none;
+    border-top-width: 0px;
+}
+
+}
+
+.menu ul {
+    display: inherit;
+    flex-direction: row;
+    text-align: center;
+    margin-top: -23px;
+    margin-right: auto;
+    position: relative;
+    margin-left: 37%;
+}
+.tituloscortos {
+    color: #203A87;
+    font-weight: 700;
+    padding-top: 12px;
+    line-height: 20px;
+}
+.textazulsinmargen {
+    color: #203A87;
+    font-family: open-sans;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    text-align: justify;
+    line-height: 19px;
+    padding-top: 10px;
+}
+
+.parrafoslargos {
+    width: 24%;
+    margin-top: 31%;
+    padding-bottom: auto;
+    padding-right: auto;
+}
+.textazulsinmargen {
+}
+.nuestrosservicios1 {
+}
+.textonuestrosservicios {
+    margin-left: 10%;
+    font-family: open-sans;
+    font-style: normal;
+    font-weight: 400;
+    font-size: small;
+    padding-top: 17px;
+    text-align: justify;
+    line-height: 16px;
+    width: 75%;
+    margin-top: 28px;
+}
+.residuoshero {
+}
+.residuosdomiciliartextos {
+    width: 10%;
+    height: 100%;
+    float: right;
+    left: -36%;
+    position: relative;
+}
+.residuoscuerpo2 {
+    color: #213A89;
+    text-align: justify;
+    font-family: open-sans;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    width: 130%;
+    padding-top: 19px;
+    padding-bottom: 17px;
+    line-height: 16px;
+}
+
+
+.residuostitulos {
+    color: #213A89;
+    font-family: open-sans;
+    font-style: normal;
+    font-weight: 800;
+    font-size: small;
+}
+#modulo-09 {
+}
+#Modulo-01 {
+}
+#Modulo-00 {
+}
+#Contacto {
+}
+
+
+.formulariolargo {
+    width: 337px;
+    margin-top: 10px;
+    height: 37px;
+    background-color: #DADBE1;
+    border-radius: 10px;
+    font-family: open-sans;
+    font-style: normal;
+    font-weight: 400;
+    color: #213A89;
+    padding-left: 14px;
+}
+.formulariocorto {
+    width: 166px;
+    margin-top: 10px;
+    height: 37px;
+    background-color: #DADBE1;
+    border-radius: 10px;
+    font-family: open-sans;
+    font-style: normal;
+    font-weight: 400;
+    color: #213A89;
+    padding-left: 14px;
+}
+.enviar {
+    margin-top: 1px;
+    margin-left: 97px;
+    width: 152px;
+    height: 39px;
+    font-family: open-sans;
+    font-style: normal;
+    font-weight: 800;
+    color: #FFFFFF;
+    background-color: #FBD821;
+    border-radius: 9px;
+}
